@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.limita-secao {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Topo */
+
+header div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+header nav {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+header nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* banner */
+
+section {
+    padding: 60px 20px;
+}
+
+.banner {
+    color: white;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: url('img/bg-estacao.jpg') no-repeat;
+    background-size: cover;
+}
+
+.banner:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+.banner h1 {
+    font-size: 90px;
+}
+
+.banner h2 {
+    font-size: 35px
+}
+
+.banner div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform:uppercase ;
+    padding: 60px 20px;
+    z-index: 1;
+}
+
+/* container sobre */
+
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.box-sobre p {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.box-sobre p::first-letter {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.imagem-secao {
+    width: 100%;
+}
+
+/* Pontos turísticos */
+
+.container-pontos {
+    background-color: #eceaea;
+    width: 100%;
+}
+
+.box-pontos p {
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+.box-pontos p:first-letter{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.box-pontos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box-pontos li {
+    font-size: 24px;
+    margin: 12px 0 0 ;
+    display: flex;
+    align-items: center;
+}
+
+.box-pontos li:before {
+    content: "";
+    background: url('img/seta.png');
+    width: 20px;
+    height: 20px;
+    margin: 0 6px 0 0 ;
+}
+
+/* Galeria de fotos */
+
+.containter-galeria p {
+    width: 100%;
+}
+
+.secao-intro p {
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 5px);
+    opacity: 0.6;
+}
+
+.galeria img:hover {
+    opacity: 1
+}
+
+/* Rodapé */
+
+.rodape {
+    width: 100%;
+    background-color: #f5c002;
+    padding: 20px 0;
+}
+
+.rodape div p {
+    font-size: 20px;
+    text-align: center;
+}
